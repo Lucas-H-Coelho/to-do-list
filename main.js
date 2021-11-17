@@ -13,9 +13,19 @@ function mostrarTarefas() {
     for (tarefa of tarefas) {
         const elementoTarefa = document.createElement('li')
         const textoTarefa = document.createTextNode(tarefa)
+        
+        const elementoLink = document.createElement('a')
+        const pos = tarefas.indexOf(tarefa)
+
+        const linkText = document.createTextNode('X')
+        elementoLink.appendChild(linkText)
+
+        elementoLink.setAttribute('href', '#')
+        elementoLink.setAttribute('onclick', `deletaTarefa(${pos})`)
 
         elementoTarefa.appendChild(textoTarefa)
         elementoLista.appendChild(elementoTarefa)
+        elementoTarefa.appendChild(elementoLink)
     }
 }
 
@@ -31,3 +41,8 @@ function addTarefas() {
 }
 
 elementoBotao.setAttribute('onclick', 'addTarefas()')
+
+function deletaTarefa(pos) {
+    tarefas.splice(pos, 1)
+    mostrarTarefas()
+}
