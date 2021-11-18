@@ -1,4 +1,4 @@
-const elementoLista = document.querySelector('ul');
+const elementoLista = document.querySelector('ol');
 const elementoInput = document.querySelector('input');
 const elementoBotao = document.querySelector('button');
 

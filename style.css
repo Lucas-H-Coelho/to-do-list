@@ -7,7 +7,33 @@
     outline: 0;
 }
 
-body, button, input{
+body{
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    background-color: rgba(25, 180, 172, 0.849);
+}
+
+.content{
+    padding: 60px;
+    margin-top: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
+    box-sizing: border-box 20px 20px;
+    background-color: rgb(50, 219, 231);
+}
+
+h1{
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.div1{
+    padding: auto;
+    margin-top: 50px;
+}
+
+.div2{
+    padding: auto;
+    margin-top: 50px;
 }
