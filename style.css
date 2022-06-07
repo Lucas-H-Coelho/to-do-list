@@ -10,37 +10,46 @@
 body{
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.849);
+    background-color: rgba(255, 0, 0, 0.849);
 }
 
 .content{
     margin-top: 1px;
     margin-left: 50px;
     margin-right: 75%;
-    border: 50px, 50px, 50px, 50px ;
     padding: 130px;
-    box-sizing: border-box 20px 20px;
     background-color: rgb(0, 0, 0);
+    display: grid; 
+    grid-area: left 40px;
     
 }
 
+
 h1{
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-family:'Roboto', sans-serif;
-    font-size: medium;
-    font-weight: 100px;
-    padding: auto;
-    position: static;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    
+
     
 }
 
 .div1{
+    display: flex;
     padding: auto;
-    margin-top: 50px;
+    margin-top: 5px;
+    text-align: center;
+    color: aliceblue;   
+    
 
 }
 
 .div2{
+    
+    display: flex;
     padding: auto;
     margin-top: 50px;
+    color: aliceblue;
 }
