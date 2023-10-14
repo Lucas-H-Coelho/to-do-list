@@ -1,46 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 
-*{
-    margin: 0 auto;
-    padding: 0;
-    text-decoration: none;
+* {
+  margin: 0 auto;
+  padding: 0;
+  text-decoration: none;
 }
 
-body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: left;
-    background-color: rgba(255, 0, 0, 0.849);
+body {
+  max-width: 1080px;
+  background-color: #a19797;
 }
 
-.content{
-    
-    background-color: rgba(85, 92, 126, 0.3);
-    display: grid; 
-    grid-area: center;
+.content {
+  border: 2px dashed rgba(201, 193, 160, 0.3);
+  margin-top: 15%;
+  width: 40vh;
+  height: 100%;
+  min-height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding: 15px;
+  background-color: rgba(85, 92, 126, 0.3);
+  display: grid;
+}
+
+.input-tarefas {
+  margin-top: 25px;
+  display: flex;
+  padding: auto;
+  text-align: center;
+  height: 25px;
+  }
+
+.btn-adicionar {
+  background: #3fe255;
+  border-radius: 5px;
+  padding: 7px;
+  margin-left: 15px;
+  text-align: center;
+  line-height: 0;
+}
+
+.btn-adicionar:hover {
+  background: rgb(230, 203, 167);
+}
+
+.area-lista {
+  margin-top: 25px;
+  padding: 0 15px 0 15px;
+  color: aliceblue;
+  
+}
+
+.area-lista ol{
+  text-transform: uppercase;
+}
+
+.area-lista ol li{
+  padding: 5px;
+}
+
+.area-lista ol li:hover{
+  padding: 5px;
+  text-decoration: underline;
+}
+
+.area-lista ol li a{
+  float: right;
+  padding: 2px;
+  color: #f2f2f2;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+}
+
+.area-lista ol li a:hover{
+  color: #fc2323;
+}
+
+.h1 {
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+#input-area{
+  border-radius: 5px;
+  background:#c7c5c5;
+
 }
 
 
-h1{
-    color: rgb(255, 255, 255);
-    font-family:'Roboto', sans-serif;
-    font-size: 25px;
-    text-align: center;
-}
 
-.div1{
-    display: flex;
-    padding: auto;
-    margin-top: 5px;
-    text-align: center;
-    color: aliceblue;   
-    
-
-}
-
-.div2{
-    
-    display: flex;
-    padding: auto;
-    margin-top: 50px;
-    color: aliceblue;
-}

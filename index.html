@@ -5,34 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>LIST</title>
+    <title>Lista de tarefas (to do list)</title>
   </head>
   <body>
     <div id="container">
-      <header class="cabecalho">
-        <nav class="navbar">
-          <ul class="nav">
-            <li>Home</li>
-            <li>Miniprojetos</li>
-          </ul>
-        </nav>
-      </header>
-
       <div class="content">
         <div class="h1">
           <h1>Lista de tarefas</h1>
-        </div>
 
-        <div class="div1">
-          <input type="text" placeholder="Escreva uma tarefa..." />
-          <button>Adicionar</button>
-        </div>
+          <div class="input-tarefas">
+            <input id="input-area" type="text" placeholder="Escreva uma tarefa..." />
+            <button class="btn-adicionar">Adicionar</button>
+            
+          </div>
 
-        <div class="div2">
-          <ol></ol>
+          <div class="area-lista">
+            <ol></ol>
+          </div>
+
         </div>
       </div>
     </div>
+
+    
 
     <script src="main.js"></script>
   </body>
